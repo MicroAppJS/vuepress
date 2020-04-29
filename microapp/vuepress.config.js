@@ -20,7 +20,7 @@ module.exports = {
     locales: {
         '/zh/': {
             lang: 'zh-CN',
-            title: 'Plugin - VuePress',
+            title: 'MicroApp - VuePress',
             description: '一款简洁而优雅的 博客 & 文档 主题, 依赖于 Micro App 微应用框架',
 
             label: '简体中文',
@@ -34,7 +34,7 @@ module.exports = {
         },
         // '/en/': {
         //     lang: 'en-US',
-        //     title: 'Plugin - VuePress',
+        //     title: 'MicroApp - VuePress',
         //     description: 'Vue-powered Static Site Generator',
         // },
     },

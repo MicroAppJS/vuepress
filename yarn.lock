@@ -997,16 +997,6 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@micro-app/cli@^0.3.16":
-  version "0.3.16"
-  resolved "https://registry.yarnpkg.com/@micro-app/cli/-/cli-0.3.16.tgz#35173825493341cb57e08548f06b79cff12d174f"
-  integrity sha512-1fbKmWEJE3Zt3GMtNqJzZ3V6m7RhOX25nWv9woQyvTc3xk8PRtXg5lheql9EdaMd0xNcDuVKBxnbdA4yZgNLiQ==
-  dependencies:
-    "@micro-app/core" "^0.3.29"
-    "@zkochan/cmd-shim" "^4.3.0"
-    read-cmd-shim "^2.0.0"
-    update-notifier "^4.1.0"
-
 "@micro-app/cli@^0.3.17":
   version "0.3.17"
   resolved "https://registry.yarnpkg.com/@micro-app/cli/-/cli-0.3.17.tgz#ca546d076cd1301a06502fa293546ccd4ad6fefb"
@@ -1016,15 +1006,6 @@
     "@zkochan/cmd-shim" "^4.3.0"
     read-cmd-shim "^2.0.0"
     update-notifier "^4.1.0"
-
-"@micro-app/core@^0.3.29":
-  version "0.3.29"
-  resolved "https://registry.yarnpkg.com/@micro-app/core/-/core-0.3.29.tgz#855f0ee436b554dec486286bdd7d21acada71fa5"
-  integrity sha512-IHMCEhs2qX506yc7LiUSTDnzDDAfYsU0brMx0gTFQijPE1gLk+VB2F55fSwKMcLJDC+poJcc2xYht+Rmsxpzfg==
-  dependencies:
-    "@micro-app/shared-utils" "^0.1.19"
-    dotenv "^8.2.0"
-    dotenv-expand "^5.1.0"
 
 "@micro-app/core@^0.3.30":
   version "0.3.30"
@@ -1043,12 +1024,12 @@
     "@release-it/conventional-changelog" "^1.1.0"
     release-it "^13.1.1"
 
-"@micro-app/plugin-vuepress@^0.1.24":
-  version "0.1.24"
-  resolved "https://registry.yarnpkg.com/@micro-app/plugin-vuepress/-/plugin-vuepress-0.1.24.tgz#aa6f42f613668c8e4feceb8a07a6f2da119e17ab"
-  integrity sha512-8gRzrsgTFMtZ7UbdsA2rj38zkWyNoAdepO5mX1T1l/m8fDwG1tLiXx162m8HQt3KX8sU0VmXnVMQAUBmJT8WLg==
+"@micro-app/plugin-vuepress@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@micro-app/plugin-vuepress/-/plugin-vuepress-0.2.0.tgz#b8051f3873b3f4c554b2c38f8a75465d0870248f"
+  integrity sha512-q679qMl9KVloQrktFbYn0l7GH7DvdftqgOhWNvx9ytE0sKMD9hqUR/UY4KmzWu4rxYxH0dk82laRWjcy2rt2Pg==
   dependencies:
-    "@micro-app/cli" "^0.3.16"
+    "@micro-app/cli" "^0.3.17"
     "@vssue/api-github-v4" "^1.4.0"
     "@vssue/vuepress-plugin-vssue" "^1.4.3"
     "@vuepress/plugin-back-to-top" "^1.4.1"
@@ -1067,7 +1048,7 @@
     remove-markdown "^0.3.0"
     rss "^1.2.2"
     scrollreveal "^4.0.6"
-    svg-sprite-loader "^4.2.5"
+    svg-sprite-loader "^4.2.7"
     svgo "^1.3.2"
     svgo-loader "^2.2.1"
     vuepress "^1.4.1"
@@ -11182,10 +11163,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svg-baker-runtime@^1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/svg-baker-runtime/-/svg-baker-runtime-1.4.6.tgz#73499736c636610121a9e17ae6ceb2ea1023ec6b"
-  integrity sha512-n+Uq23mafI12WLHXahkjSY00qHJaNfeB9XgVKdo0C4kzrcn8JnunXNajvOlqkFaTqj7xT7MwTlFl3Hga8AevcQ==
+svg-baker-runtime@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/svg-baker-runtime/-/svg-baker-runtime-1.4.7.tgz#f4720637f5b6202eef6378d81f1fead0815f8a4e"
+  integrity sha512-Zorfwwj5+lWjk/oxwSMsRdS2sPQQdTmmsvaSpzU+i9ZWi3zugHLt6VckWfnswphQP0LmOel3nggpF5nETbt6xw==
   dependencies:
     deepmerge "1.3.2"
     mitt "1.1.2"
@@ -11210,10 +11191,10 @@ svg-baker@^1.5.0, svg-baker@^1.7.0:
     query-string "^4.3.2"
     traverse "^0.6.6"
 
-svg-sprite-loader@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/svg-sprite-loader/-/svg-sprite-loader-4.2.5.tgz#4848a2c36efaabb77753481f52ad0b256355537e"
-  integrity sha512-0upgOBcJKI/stFhBqrPj0x99zhkKUR6JDOtQLozDY5HrIAHEIMW5iY8W9/1CfPT6G+ymqqKV0nLtwiUEwfHKrg==
+svg-sprite-loader@^4.2.7:
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/svg-sprite-loader/-/svg-sprite-loader-4.2.7.tgz#2304309b46368a34e7b271693664d92761d8b94e"
+  integrity sha512-7e9CDoPr1oH/whWF4TVqQ5tSPk0qq6ejUA/jtBw1YdTFefOAaxPIDIGFJpjQk0CINf4kEC+EVbU8wAtVt/kYDw==
   dependencies:
     bluebird "^3.5.0"
     deepmerge "1.3.2"
@@ -11222,7 +11203,7 @@ svg-sprite-loader@^4.2.5:
     html-webpack-plugin "^3.2.0"
     loader-utils "^1.1.0"
     svg-baker "^1.5.0"
-    svg-baker-runtime "^1.4.6"
+    svg-baker-runtime "^1.4.7"
     url-slug "2.0.0"
 
 svg-tags@^1.0.0:

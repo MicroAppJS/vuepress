@@ -22,9 +22,7 @@
     },
     "files": [
         "bin",
-        "scripts",
-        "src",
-        "theme"
+        "src"
     ],
     "homepage": "https://github.com/MicroAppJS/vuepress",
     "repository": {
@@ -55,6 +53,6 @@
     },
     "dependencies": {
         "@micro-app/cli": "^0.3.17",
-        "@micro-app/plugin-vuepress": "^0.1.24"
+        "@micro-app/plugin-vuepress": "^0.2.0"
     }
 }
