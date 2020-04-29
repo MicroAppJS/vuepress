@@ -1,0 +1,105 @@
+# Micro APP - VuePress
+
+[CLI] adapter vuepress.
+
+[![Github Actions Coveralls][Github-Actions-Coveralls]][Github-Actions-Coveralls-url]
+[![Coverage Status][Coverage-img]][Coverage-url]
+[![NPM Version][npm-img]][npm-url]
+[![NPM Download][download-img]][download-url]
+
+[Github-Actions-Coveralls]: https://github.com/MicroAppJS/vuepress/workflows/Coveralls/badge.svg
+[Github-Actions-Coveralls-url]: https://github.com/MicroAppJS/vuepress
+[Coverage-img]: https://coveralls.io/repos/github/MicroAppJS/vuepress/badge.svg?branch=master
+[Coverage-url]: https://coveralls.io/github/MicroAppJS/vuepress?branch=master
+[npm-img]: https://img.shields.io/npm/v/@micro-app/vuepress.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@micro-app/vuepress
+[download-img]: https://img.shields.io/npm/dm/@micro-app/vuepress.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@micro-app/vuepress
+
+## Install
+
+```sh
+yarn add @micro-app/vuepress
+```
+
+or
+
+```sh
+npm install -D @micro-app/vuepress
+```
+
+## Usage
+
+### 在项目 `根目录` 的 `micro-app.config.js` 文件中配置
+
+> 请确保你的 Node.js 版本 >= 8.6。
+
+```bash
+# 安装 vuepress plugin
+yarn add -D @micro-app/vuepress # 或者：npm install -D @micro-app/vuepress
+
+# 新建一个 docs 文件夹
+mkdir docs
+
+# 新建一个 markdown 文件
+echo '# Hello MicroApp VuePress!' > docs/README.md
+
+# 开始写作
+npx micro-app-vuepress dev docs
+```
+
+### 创建 `micro-app.vuepress.config.js` 文件, 并如下配置
+
+```js
+{ // temp demo
+    title: 'Micro App',
+    sourceDir: 'docs',
+    sidebar: {
+        ...
+    },
+    nav: [],
+    locales: {
+        '/': {
+            lang: 'zh-CN',
+            description: '🔌 多模块可插拔插件的微应用框架',
+            label: '简体中文',
+            selectText: '选择语言',
+            lastUpdated: '上次编辑时间',
+            repoLabel: '查看源码',
+            editLinkText: '在 GitHub 上编辑此页',
+        },
+        '/en/': {
+            lang: 'en-US',
+            description: '🔌 Pluggable Micro Application Framework',
+            label: 'English',
+            selectText: 'Languages',
+            lastUpdated: 'Last Updated',
+            repoLabel: 'View Code',
+            editLinkText: 'Edit this page on GitHub',
+        },
+    },
+    // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
+    repo: 'MicroAppJS/MicroApp-Core',
+    // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+    // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+    // repoLabel: '查看源码',
+    // 假如你的文档仓库和项目本身不在一个仓库：
+    // docsRepo: 'MicroAppJS/MicroApp-Core',
+    // 假如文档不是放在仓库的根目录下：
+    docsDir: 'docs',
+    // 假如文档放在一个特定的分支下：
+    docsBranch: 'master',
+    // 默认是 false, 设置为 true 来启用
+    editLinks: true,
+    // 默认为 "Edit this page"
+    // editLinkText: '帮助我们改善此页面！',
+    sidebarDepth: 3,
+    // algolia: {
+    //     indexName: "cli_vuejs",
+    //     apiKey: "f6df220f7d246aff64a56300b7f19f21"
+    // },
+    // search: false,
+    // searchMaxSuggestions: 10,
+    // displayAllHeaders: true // 默认值：false
+}
+```
