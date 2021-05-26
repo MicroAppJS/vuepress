@@ -46,13 +46,13 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@micro-app/plugin-deploy": "^0.0.7",
+        "@micro-app/plugin-deploy": "^0.0.8",
         "@types/jest": "^24.9.1",
-        "eslint-config-2o3t": "^2.0.1",
+        "eslint-config-2o3t": "^2.0.2",
         "jest": "^24.9.0"
     },
     "dependencies": {
-        "@micro-app/cli": "^0.3.17",
-        "@micro-app/plugin-vuepress": "^0.2.0"
+        "@micro-app/cli": "^0.4.0",
+        "@micro-app/plugin-vuepress": "^0.3.0"
     }
 }
