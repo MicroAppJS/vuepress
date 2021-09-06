@@ -52,7 +52,7 @@
         "jest": "^24.9.0"
     },
     "dependencies": {
-        "@micro-app/cli": "^0.4.0",
-        "@micro-app/plugin-vuepress": "^0.3.0"
+        "@micro-app/cli": "^0.4.1",
+        "@micro-app/plugin-vuepress": "^0.3.2"
     }
 }
