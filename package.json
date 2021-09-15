@@ -1,6 +1,6 @@
 {
     "name": "@micro-app/vuepress",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "[CLI] adapter vuepress.",
     "main": "src/index.js",
     "bin": {
