@@ -7,12 +7,13 @@
         "micro-app-vuepress": "bin/micro-app-vuepress"
     },
     "scripts": {
+        "micro-app": "micro-app",
         "prepublishOnly": "npm run test",
         "test": "jest",
-        "dev": "node test dev",
-        "build": "node test build --base /vuepress/",
-        "create": "node test create --type post --base __test --classify categories",
-        "vp:deploy": "node test deploy --base /vuepress/",
+        "dev": "micro-app vuepress dev",
+        "build": "micro-app vuepress build --base /vuepress/",
+        "create": "micro-app vuepress create --type post --base __test --classify categories",
+        "vp:deploy": "micro-app vuepress deploy --base /vuepress/",
         "deploy": "micro-app deploy",
         "release": "micro-app release",
         "release:alpha": "npm run release -- --preRelease=alpha",
@@ -46,13 +47,13 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@micro-app/plugin-deploy": "^0.0.8",
+        "@micro-app/plugin-deploy": "^0.0.9",
         "@types/jest": "^24.9.1",
         "eslint-config-2o3t": "^2.0.2",
         "jest": "^24.9.0"
     },
     "dependencies": {
-        "@micro-app/cli": "^0.4.1",
-        "@micro-app/plugin-vuepress": "^0.3.2"
+        "@micro-app/cli": "^0.4.2",
+        "@micro-app/plugin-vuepress": "^0.3.4"
     }
 }

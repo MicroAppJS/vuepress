@@ -2,7 +2,8 @@
 
 const config = {
     plugins: [
-        '@micro-app/plugin-deploy', // test
+        '@micro-app/plugin-deploy',
+        '@micro-app/plugin-vuepress',
     ],
 };
 

@@ -6,6 +6,7 @@ const argv = yParser(process.argv.slice(2));
 
 const { createService } = require('@micro-app/cli');
 const service = createService(argv);
+
 service.registerPlugin({
     id: '@micro-app/plugin-vuepress',
 });

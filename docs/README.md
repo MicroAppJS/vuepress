@@ -7,7 +7,7 @@ badges:
     - https://img.shields.io/npm/v/@micro-app/vuepress.svg?style=social&logo=npm
     - https://img.shields.io/npm/dm/@micro-app/vuepress.svg?style=social&logo=npm
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: https://microappjs.github.io/plugin-vuepress/guide/getting-started
 features:
     - image: /banner/designer_mindset.svg
     - title: 简洁至上
@@ -26,8 +26,10 @@ footer: true
 请确保你的 Node.js 版本 >= 8.6。
 :::
 
+我们提供了一个简单快速的开始方式，如下：
+
 ```bash
-# 安装 vuepress plugin
+# 安装 micro-app vuepress
 yarn add -D @micro-app/vuepress # 或者：npm install -D @micro-app/vuepress
 
 # 新建一个 docs 文件夹
