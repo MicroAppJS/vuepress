@@ -54,6 +54,6 @@
     },
     "dependencies": {
         "@micro-app/cli": "^0.4.2",
-        "@micro-app/plugin-vuepress": "^0.3.13"
+        "@micro-app/plugin-vuepress": "^0.3.15"
     }
 }

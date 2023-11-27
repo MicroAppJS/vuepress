@@ -5,14 +5,24 @@ process.env.MICRO_APP_TEST = 'true';
 
 describe('VuePress Bin test', () => {
 
-    it('dev run docs', () => {
+    it('help run', async () => {
 
         try {
-            require('../bin/micro-app-vuepress');
+            const { service } = require('@micro-app/cli');
+            await service.run('vuepress');
         } catch (error) {
             console.warn(error);
         }
+    });
 
+    it('dev run docs', async () => {
+
+        try {
+            const { service } = require('@micro-app/cli');
+            await service.run('vuepress', { _: [ 'dev', 'docs' ] });
+        } catch (error) {
+            console.warn(error);
+        }
     });
 
 });
